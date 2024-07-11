@@ -17,7 +17,8 @@ module.exports = {
           "Droid Sans",
           "Helvetica Neue",
         ],
-      }
+        DM: ["DM Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],
