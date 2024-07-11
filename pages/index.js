@@ -1,5 +1,10 @@
-import Home from "../components/Home";
+// pages/index.js
+import Login from "../components/Login";
 
 export default function Index() {
-  return <Home />;
+  return (
+  <>
+    <Login />
+  </>
+);
 }

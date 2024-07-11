@@ -1,16 +1,20 @@
 // components/Signup.js
-import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/router";
+import Image from "next/image";
 import Modal from "react-modal";
-import {X} from "lucide-react";
+import { X } from "lucide-react";
 
 Modal.setAppElement("#__next");
 
-function Signup({ isOpen, onClose }) {
+function Signup({ isOpen, onClose }) { 
+  const router = useRouter();
 
   function handleSubmit(e) {
     e.preventDefault();
+    // TODO: Implement signup
     onClose();
+    router.push("/home");
   }
   return (
     <Modal
